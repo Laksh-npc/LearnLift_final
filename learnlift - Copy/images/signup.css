@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./llmbg.jpeg");
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 600px; /* Increased width for better spacing */
+    padding: 20px;
+    background-color: #a2bad1;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid lightblue;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between; /* Aligns child elements */
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-field {
+    flex: 1; /* Takes equal space */
+    margin-right: 10px; /* Space between fields */
+}
+
+.form-field:last-child {
+    margin-right: 0; /* Remove right margin for the last field */
+}
+
+form label {
+    display: block;
+    text-align: left;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

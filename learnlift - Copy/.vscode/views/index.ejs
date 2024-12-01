@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEARNLIFT/HOME</title>
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Include Navbar -->
+    <% include partials/navbar %>
+
+    <section2>
+        <div class="head">
+            <div class="banner">
+                <img src="/images/llmbg.jpeg" alt="Banner Image">
+                <div class="ll">
+                    LEARNLIFT - "Empowering Freshers, Elevating College Life"
+                </div>
+            </div>
+        </div>
+    </section2>
+
+    <section class="second">
+        <h1 class="heading-text">LET'S DIVE DEEP INTO THE WORLD OF LEARNING!</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="/images/resources1.jpg" alt="Resources">
+                <button class="button" onclick="openPage('resources')">Resources</button>
+                <div class="hover-box">
+                    <p>Access valuable learning resources here</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/images/exams.jpg" alt="Mock Tests">
+                <button class="button" onclick="openPage('mock-tests')">Mock Tests</button>
+                <div class="hover-box">
+                    <p>Take practice tests to prepare better</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="/images/dashboard.jpg" alt="Dashboard">
+                <button class="button" onclick="openPage('dashboard')">Dashboard</button>
+                <div class="hover-box">
+                    <p>Manage your learning progress in the dashboard</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="/images/community.jpg" alt="Community">
+                <button class="button" onclick="openPage('community')">Community</button>
+                <div class="hover-box">
+                    <p>Join the community and collaborate with your peers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="/images/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="about-box">
+            <h2>OUR AIM</h2>
+            <p>
+                LearnLift offers freshers an all-in-one academic platform to access notes, take mock tests, and track progress through a personalized dashboard. Designed to foster collaboration, it provides a vibrant student community for peer support and resource sharing. With tailored content, LearnLift empowers students to stay organized, build confidence, and excel academically throughout their college journey.
+            </p>
+        </div>
+    </section>
+
+    <section class="review">
+        <h2 class="review-heading">What Students Think About Us?</h2>
+
+        <div class="review-container">
+            <!-- Row 1 - First 4 Review Boxes -->
+            <div class="review-box">
+                <img src="/images/st5.jpg">
+                <div class="review-content">
+                    <p>"This platform has been a game-changer for my studies. The resources and mock tests helped me a lot!"</p>
+                    <h4>- Laksh</h4>
+                </div>
+            </div>
+
+            <div class="review-box">
+                <img src="/images/st6.jpg">
+                <div class="review-content">
+                    <p>"The personalized dashboard keeps me on track, and the community is so helpful for collaboration."</p>
+                    <h4>- Yugen</h4>
+                </div>
+            </div>
+
+            <div class="review-box">
+                <img src="/images/st4.jpg">
+                <div class="review-content">
+                    <p>"I love how easy it is to access notes and resources. Everything I need is in one place."</p>
+                    <h4>- Adamya</h4>
+                </div>
+            </div>
+
+            <div class="review-box">
+                <img src="/images/st2.jpg">
+                <div class="review-content">
+                    <p>"The mock tests helped me practice and improve my scores. Highly recommend this platform."</p>
+                    <h4>- Preet</h4>
+                </div>
+            </div>
+
+            <!-- Row 2 - Next 2 Review Boxes -->
+            <div class="review-box">
+                <img src="/images/st3.jpg">
+                <div class="review-content">
+                    <p>"The resources here are very well organized, making it easy to review before exams."</p>
+                    <h4>- Arjun</h4>
+                </div>
+            </div>
+
+            <div class="review-box">
+                <img src="/images/st1.jpg">
+                <div class="review-content">
+                    <p>"The peer guidance in the community is invaluable, especially when I needed advice on projects."</p>
+                    <h4>- Nisha</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <% include partials/footbar %>
+</body>
+
+</html>

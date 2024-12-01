@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Select Semester - LearnLift</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            overflow-x: hidden;
+            background: url('./images/A_dark-themed_educational_image_representing_pract.jpeg') no-repeat center center/cover;
+        }
+
+        /* Navbar styles */
+        header {
+            background-color: #354971;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideInDown 1s ease-out;
+        }
+
+        .logo h1 {
+            color: white;
+            margin-left: 20px;
+            animation: fadeInLogo 1.5s ease-in-out;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin-right: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Animation for Navbar */
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLogo {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Main content styling */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            
+            padding: 20px;
+            text-align: center;
+            animation: fadeInContent 1s ease-in-out;
+            
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-family: 'Arial', sans-serif;
+            color: #c3d4f7;
+            text-transform: uppercase;
+        }
+
+        .semester-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .semester-buttons .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .semester-buttons button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            font-family: 'Arial', sans-serif;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 180px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .semester-buttons button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .semester-buttons button:focus {
+            outline: none;
+            transform: scale(1.05);
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeInContent {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer styles */
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #354971;
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">
+            <h1>LearnLift</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2>Select your semester to get started!</h2>
+
+        <div class="semester-buttons">
+            <div class="row">
+                <button onclick="location.href='subject.html'">Semester - 1</button>
+                <button onclick="location.href='subject.html'">Semester - 2</button>
+                <button onclick="location.href='subject.html'">Semester - 3</button>
+            </div>
+            <div class="row">
+                <button onclick="location.href='subject.html'">Semester - 4</button>
+                <button onclick="location.href='subject.html'">Semester - 5</button>
+                <button onclick="location.href='subject.html'">Semester - 6</button>
+            </div>
+            <div class="row">
+                <button onclick="location.href='subject.html'">Semester - 7</button>
+                <button onclick="location.href='subject.html'">Semester - 8</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>

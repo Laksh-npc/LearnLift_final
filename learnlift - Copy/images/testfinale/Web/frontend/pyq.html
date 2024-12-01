@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Previous Year Questions - LearnLift (DAA)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Times New Roman', serif;
+            background-color: #e8e8e8;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #354971;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: slideInDown 1s ease-out;
+        }
+
+        .logo h1 {
+            color: white;
+            margin-left: 20px;
+            animation: fadeInLogo 1.5s ease-in-out;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin-right: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        .pdf-container {
+            width: 1000px;
+            background-color: white;
+            padding: 40px;
+            margin: 50px auto;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ccc;
+            position: relative;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #354971;
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .pdf-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .pdf-content h3 {
+            font-size: 1.4rem;
+            color: #000;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .pdf-content p {
+            margin-bottom: 15px;
+        }
+
+        .pdf-content code {
+            display: block;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 1rem;
+            border-left: 3px solid #354971;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #f80b0b;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #283eca;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            text-align: center;
+            color: #555;
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .pdf-container {
+                width: 100%;
+                padding: 20px;
+                margin: 0;
+                box-shadow: none;
+                border: none;
+            }
+
+            .download-btn {
+                display: none;
+            }
+
+            footer {
+                margin-top: 30px;
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLogo {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>LearnLift</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="pdf-container">
+        <h2>Previous Year Questions - DAA</h2>
+
+        <div class="pdf-content">
+            <h3>Design and Analysis of Algorithms - Sample Questions</h3>
+
+            <p><strong>Q1:</strong> Describe the time complexity of Merge Sort. Why is it considered an efficient sorting algorithm?</p>
+
+            <p><strong>Q2:</strong> Explain the concept of Dynamic Programming and provide an example of a problem that can be solved using this technique.</p>
+
+            <p><strong>Q3:</strong> What is the difference between a Greedy Algorithm and Dynamic Programming? Provide examples for each approach.</p>
+
+            <h3>Advanced DAA Topics</h3>
+
+            <p><strong>Q4:</strong> Explain the concept of NP-completeness. What are some examples of NP-complete problems?</p>
+
+            <p><strong>Q5:</strong> Discuss the Travelling Salesman Problem (TSP). Why is it considered a hard problem, and what are some approaches to solve it?</p>
+
+            <p><strong>Q6:</strong> What is the purpose of the Divide and Conquer approach? Provide examples of algorithms that use this technique.</p>
+
+        </div>
+
+        <!-- Replace 'path-to-your-file.pdf' with the actual path where your PDF is hosted -->
+        <a href="path-to-your-file.pdf" class="download-btn" download>Download Full PDF</a>
+
+        <footer>
+            <p>&copy; 2024 LearnLift. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

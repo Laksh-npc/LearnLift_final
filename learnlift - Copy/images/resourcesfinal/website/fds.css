@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fbfb;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('/images/hi.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}    
+
+.container {
+    text-align: center;
+    background-color:#FFFAD6;
+    padding: 20px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.3), -5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Lalezar', cursive;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Lalezar', cursive;
+    color: #333;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Lalezar', cursive;
+    color: #333;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.topic {
+    width: 100%;
+    background-color: #5A5A5A;
+}
+
+.topic a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    background-color: #837C7C;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+    font-family: 'Lalezar', cursive;
+}
+
+.topic a:hover {
+    background-color: #837C7C;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.topic a:active {
+    transform: scale(1);
+    box-shadow: none;
+}

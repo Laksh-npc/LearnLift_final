@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java Mastery Challenge</title>
+  <style>
+    /* Global Styling */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background: linear-gradient(135deg, #ff7eb9, #ff758c, #ff3e72, #ff065c);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold;
+      margin: 20px;
+      text-shadow: 0 0 8px #fff;
+    }
+    .card {
+      background-color: #282c34;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      margin: 20px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 15px;
+    }
+    .options button {
+      display: block;
+      background-color: #ff5e78;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 5px 0;
+      cursor: pointer;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+    /* Hover Animation for Options */
+    .options button:hover {
+      background-color: #ff7689;
+      transform: scale(1.05);
+    }
+    .result {
+      font-size: 1em;
+      margin-top: 10px;
+      padding: 10px;
+      display: none;
+    }
+    .correct { color: #00e676; }
+    .incorrect { color: #ff3d00; }
+    /* Timer Styling and Alignment */
+    .timer {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #00c8ff;
+      margin-top: 10px;
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+    #submitBtn {
+      display: block;
+      background-color: #00e676;
+      color: #000;
+      border: none;
+      padding: 15px;
+      border-radius: 10px;
+      margin: 30px auto;
+      font-size: 1.2em;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.2s;
+    }
+    #submitBtn:hover {
+      background-color: #00c864;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">Java Mastery Challenge</div>
+
+  <!-- Timer -->
+  <div class="timer">Time Left: <span id="timer">60</span>s</div>
+
+  <!-- Java Question Cards -->
+  <div class="card">
+    <div class="question">1. What is the difference between JDK and JVM?</div>
+    <div class="options">
+      <button onclick="selectAnswer(1, 'A')">JDK is Java Development Kit, JVM is JavaScript Virtual Machine</button>
+      <button onclick="selectAnswer(1, 'B')">JDK is for development, JVM executes Java bytecode</button>
+      <button onclick="selectAnswer(1, 'C')">JDK is runtime, JVM compiles code</button>
+      <button onclick="selectAnswer(1, 'D')">JDK is for testing, JVM is for production</button>
+    </div>
+    <div class="result" id="result1">Correct Answer: B</div>
+  </div>
+
+  <!-- Repeat other question cards here in the same format... -->
+
+  <!-- Submit Button -->
+  <button id="submitBtn" onclick="submitQuiz()">Submit Answers</button>
+</div>
+
+<script>
+  let timeLeft = 60;
+  const timerElement = document.getElementById('timer');
+  const countdown = setInterval(() => {
+    if (timeLeft <= 0) {
+      clearInterval(countdown);
+      timerElement.innerText = 'Time\'s up!';
+      alert('Time\'s up! Try again or review your answers.');
+    } else {
+      timerElement.innerText = timeLeft;
+      timeLeft--;
+    }
+  }, 1000);
+
+  const correctAnswers = { 1: 'B', 2: 'A', 3: 'A', 4: 'A', 5: 'B', 6: 'C', 7: 'D', 8: 'A', 9: 'D', 10: 'B' };
+  const userAnswers = {};
+
+  function selectAnswer(questionNumber, answer) {
+    userAnswers[questionNumber] = answer;
+  }
+
+  function submitQuiz() {
+    let score = 0;
+    for (let i = 1; i <= 10; i++) {
+      const resultDiv = document.getElementById(`result${i}`);
+      if (userAnswers[i] === correctAnswers[i]) {
+        score++;
+        resultDiv.className = 'result correct';
+        resultDiv.textContent = `Correct! You selected: ${userAnswers[i]}`;
+      } else {
+        resultDiv.className = 'result incorrect';
+        resultDiv.textContent = `Incorrect. Correct answer: ${correctAnswers[i]}`;
+      }
+      resultDiv.style.display = 'block';
+    }
+    alert(`Quiz Complete! Your Score: ${score}/10`);
+  }
+</script>
+</body>
+</html>

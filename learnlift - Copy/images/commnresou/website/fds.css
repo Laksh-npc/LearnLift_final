@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fbfb; /* Light background */
+    color: #000; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Allow for content taller than the viewport */
+    padding: 20px; /* Add some padding to avoid edge cutoff */
+}
+
+.container {
+    text-align: center;
+    width: 70%;
+    background: rgba(155, 148, 148, 0.87); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: 20px 0; /* Add margin for breathing room */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Lalezar', cursive;
+    color: #333; /* Darker color for better readability */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-family: 'Lalezar', cursive;
+    color: #333;
+}
+
+.topics-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each topic */
+    align-items: center; /* Center the topics */
+}
+
+.topic {
+    width: 100%; /* Full width for all topics */
+}
+
+.topic a {
+    display: inline-block;
+    width: 100%; /* Full width to make the clickable area larger */
+    padding: 15px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+    font-family: 'Lalezar', cursive;
+}
+
+.topic a:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
+    transform: scale(1.05); /* Slightly enlarges the link */
+}
+
+.topic a:active {
+    transform: scale(1); /* Returns to normal size on click */
+    box-shadow: none; /* Removes shadow effect on click */
+}

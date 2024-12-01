@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+    background-color: #007BFF;
+}
+nav button {
+    background-color: #fff;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+nav button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.headings {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lalezar", system-ui;
+    font-weight: 200;
+    color: rgb(28, 26, 26);
+}
+h1 {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+.subjects-buttons button:hover {
+    transform: scale(1.1); /* Slightly enlarge button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+.subjects-buttons .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons in each row */
+}
+
+.subjects-buttons button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Lalezar', cursive;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 150px; /* Fixed width */
+    text-align: center;
+    margin: 10px; /* Optional space around each button */
+}
+
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fbfb; /* Light background */
+    color: #000; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the top */
+    min-height: 100vh; /* Allow for content taller than the viewport */
+    padding: 20px; /* Add some padding to avoid edge cutoff */
+    background-image: url('/images/hi.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Lalezar', cursive;
+    color: #837C7C; /* Adjusted to match previous color */
+}
+
+header p {
+    font-size: 1.4rem;
+    font-family: 'Lalezar', cursive;
+    color: #555;
+}
+
+section {
+    width: 80%; /* Adjust as needed */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Lifts up slightly on hover */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #837C7C; /* Adjusted to match previous color */
+}
+
+.technique h3 {
+    font-size: 1.5rem;
+    color: #837C7C; /* Adjusted to match previous color */
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #555;
+}

@@ -1,0 +1,87 @@
+{
+    "progressBoxes": [
+        {
+            "title": "Chapters",
+            "subheading": "Completed",
+            "value": 5
+        },
+        {
+            "title": "Mock Tests",
+            "subheading": "Completed",
+            "value": 12
+        },
+        {
+            "title": "Your Interactions",
+            "subheading": "Posts and 5 comments",
+            "value": 3
+        },
+        {
+            "title": "Projects",
+            "subheading": "Submitted",
+            "value": 2
+        }
+    ],
+    "standings": {
+        "chaptersCompleted": [
+            {
+                "chapter": "Chapter 1",
+                "completion": {
+                    "you": 80,
+                    "others": 65,
+                    "subheading":"percent"
+                }
+            },
+            {
+                "chapter": "Chapter 2",
+                "completion": {
+                    "you": 90,
+                    "others": 75
+                }
+            },
+            {
+                "chapter": "Chapter 3",
+                "completion": {
+                    "you": 85,
+                    "others": 70
+                }
+            },
+            {
+                "chapter": "Chapter 4",
+                "completion": {
+                    "you": 95,
+                    "others": 80
+                }
+            }
+        ],
+        "mockTestScores": [
+            {
+                "test": "1",
+                "scores": {
+                    "you": 75,
+                    "others": 70
+                }
+            },
+            {
+                "test": "2",
+                "scores": {
+                    "you": 85,
+                    "others": 80
+                }
+            },
+            {
+                "test": "3",
+                "scores": {
+                    "you": 90,
+                    "others": 85
+                }
+            },
+            {
+                "test": "4",
+                "scores": {
+                    "you": 95,
+                    "others": 88
+                }
+            }
+        ]
+    }
+}

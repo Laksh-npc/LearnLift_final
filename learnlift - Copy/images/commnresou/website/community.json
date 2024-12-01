@@ -1,0 +1,39 @@
+[
+    {
+      "id": "1",
+      "name": "You",
+      "image": "./images/you.jpg",
+      "message": "Message yourself"
+    },
+    {
+      "id": "2",
+      "name": "Yugen",
+      "image": "./images/yugen.jpg",
+      "message": "Hey there! I am using student community."
+    },
+    {
+      "id": "3",
+      "name": "Laksh",
+      "image": "./images/laksh.jpg",
+      "message": "Hey there! I am using student community."
+    },
+    {
+      "id": "4",
+      "name": "Aditya",
+      "image": "./images/Adii.jpg",
+      "message": "Hey there! I am using student community."
+    },
+    {
+      "id": "5",
+      "name": "Adamya",
+      "image": "./images/adma.jpg",
+      "message": "Hey there! I am using student community."
+    },
+    {
+      "id": "6",
+      "name": "Preet",
+      "image": "./images/preet.png",
+      "message": "Hey there! I am using student community."
+    }
+  ]
+  

@@ -1,0 +1,64 @@
+{
+    "questions": [
+      {
+        "question": "Which of the following is a marker interface in Java?",
+        "options": ["Runnable", "Serializable", "Comparator", "Cloneable"],
+        "answer": 1
+      },
+      {
+        "question": "Which of the following is not a valid Java keyword?",
+        "options": ["public", "static", "void", "unsigned"],
+        "answer": 3
+      },
+      {
+        "question": "Which method is used to compare two strings in Java?",
+        "options": ["equals()", "compareTo()", "==", "compare()"],
+        "answer": 0
+      },
+      {
+        "question": "Which of the following is not a valid exception in Java?",
+        "options": ["IOException", "ClassNotFoundException", "NoClassDefFoundError", "FileNotFoundException"],
+        "answer": 2
+      },
+      {
+        "question": "Which class is used to handle input and output in Java?",
+        "options": ["FileReader", "FileWriter", "BufferedReader", "All of the above"],
+        "answer": 3
+      },
+      {
+        "question": "What is the default value of a boolean variable in Java?",
+        "options": ["true", "false", "0", "null"],
+        "answer": 1
+      },
+      {
+        "question": "Which of these is not an access modifier in Java?",
+        "options": ["public", "protected", "private", "extern"],
+        "answer": 3
+      },
+      {
+        "question": "What is the size of int in Java?",
+        "options": ["8 bits", "16 bits", "32 bits", "64 bits"],
+        "answer": 2
+      },
+      {
+        "question": "Which keyword is used to inherit a class in Java?",
+        "options": ["this", "extends", "super", "import"],
+        "answer": 1
+      },
+      {
+        "question": "Which is the correct way to declare an array in Java?",
+        "options": ["int arr[];", "int arr;", "arr int[];", "arr[] int;"],
+        "answer": 0
+      },
+      {
+        "question": "What is the return type of the hashCode() method in Java?",
+        "options": ["String", "int", "Object", "void"],
+        "answer": 1
+      },
+      {
+        "question": "In Java, 'public static void main(String[] args)' is used to:",
+        "options": ["Create an instance", "Start the program", "Define a method", "Exit the program"],
+        "answer": 1
+      }
+    ]
+  }

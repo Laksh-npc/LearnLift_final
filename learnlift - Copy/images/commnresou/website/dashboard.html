@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard">
+            <h1>Student Dashboard</h1>
+            <div class="progress-grid" id="progress-grid"></div>
+
+            <!-- Standings Section -->
+            <section class="standings-section">
+                <h2>Where Do You Stand?</h2>
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="legend-color you"></span> You
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color others"></span> Others
+                    </div>
+                </div>
+
+                <!-- Chapters Completed Bar Graph -->
+                <div class="standings-bar-container">
+                    <h3>Chapters Completed</h3>
+                    <div class="bar-graph" id="chapters-completed-graph"></div>
+                </div>
+
+                <!-- Mock Test Scores Bar Graph -->
+                <div class="standings-bar-container">
+                    <h3>Mock Test Scores</h3>
+                    <div class="bar-graph" id="mock-test-scores-graph"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
